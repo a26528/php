@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section id="secMenuPagina" class="container-fluid">
+        <section id="secMenuPagina" class="container-fluid" style="background-color:#EAE0CC ;">
             
             <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#EAE0CC ;" aria-label="Fourth navbar example">
                 <div class="container-fluid">
