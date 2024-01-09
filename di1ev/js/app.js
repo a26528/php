@@ -24,4 +24,3 @@ function getVistaMenuSeleccionado(controlador, metodo){
                 })
 }
 
-

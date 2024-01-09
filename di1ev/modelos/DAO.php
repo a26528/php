@@ -44,13 +44,14 @@
                 die('Error update BD: '.$SQL);
                 return '';
             }else{
-                return $this->conexion->affected_rows;
+            return $this->conexion->affected_rows;
             }
         }
 
         public function borrar($SQL){
 			$this->conexion->query($SQL);
-			return $this->conexion->affected_rows;
+			return $this -> conexion -> affected_rows;
 		}
     }
 ?>
+

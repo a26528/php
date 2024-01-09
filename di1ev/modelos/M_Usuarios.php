@@ -29,8 +29,8 @@
 
             if ($apellidosInput != '') {
                 $SQL.= " AND (1=2 ";
-                $SQL.= " OR apellido_1 LIKE '%$apellidosInput%'";
-                $SQL.= " OR apellido_2 LIKE '%$apellidosInput%') ";
+                $SQL.= " OR apellido_1 LIKE '%$apellidoInput%'";
+                $SQL.= " OR apellido_2 LIKE '%$apellidoInput%') ";
             }
 
             if ($emailInput != '') {
@@ -53,8 +53,24 @@
             $usuarios = $this->DAO->consultar($SQL);
             return $usuarios;
         }
-
         
+
+       public function nuevo_Usuario($anadir = array()){ 
+        echo'hola';
+        $nombreInput = '';
+        $apellidosInput = '';
+        $emailInput = '';
+        $movilInput = '';
+        extract($anadir);
+        $SQL = "INSERT INTO usuarios (nombre,apellido_1,apellido_2,mail,movil) Values ('".$nombreInput."', '".$apellidoInput."','" .$apellidosInput."','".$emailInput."', '".$movilInput."')";
+
+
+        $usuarios = $this->DAO->insertar($SQL);
+        
+       }
+
+       public function modificar_Usuario(){
+       }
     }
 
 ?>

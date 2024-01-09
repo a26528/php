@@ -33,6 +33,11 @@
             Vista::render('vistas/Usuarios/V_Usuarios_Listado.php',
                             array('usuarios' => $usuario));
         }
-
+        public function nuevo_Usuario($anadir=array()){
+           
+            $usuario = $this->modelo->nuevo_Usuario($anadir);
+            Vista::render('vistas/Usuarios/V_Anadir_Usuario.php',
+           array('usuarios' => $usuario));
+        }
     }
 ?>
