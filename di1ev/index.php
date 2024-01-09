@@ -73,7 +73,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">CRUD's</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" onclick="getVistaMenuSeleccionado('Usuarios', 'getVistaUsuario')" >Usuarios</a></li>
-                                    <li><a class="dropdown-item" onclick="getVistaMenuSeleccionado('Pedidos', 'getVistaPedidos')">Pedidos</a></li>
+                                    <li><a class="dropdown-item" onclick="getVistaMenuSeleccionado('Menu', 'mostrarMenu')">Menus</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>

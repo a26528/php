@@ -1,6 +1,6 @@
 <?php 
 require_once 'controladores/Controlador.php';
-require_once 'vistas/Vistas.php';
+require_once 'vistas/Vista.php';
 require_once 'modelos/M_Menu.php';
 
 class C_Menu extends Controlador {
